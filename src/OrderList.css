@@ -1,0 +1,41 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-items {
+  border: 5px solid rgba(57, 41, 161, 0.664);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+  background-color: lightblue;
+  min-width: 210px;
+  min-height: 200px;
+}
+
+li {
+  list-style-type: none;
+  padding: 2px;
+}
+
+li:hover {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: darkorchid;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.price {
+  font-size: 0.6em;
+  color: rgb(21, 158, 151);
+}
+
+h2:hover {
+  cursor: default;
+}
+
+.menu-items:last-child {
+  margin: 10px;
+}
