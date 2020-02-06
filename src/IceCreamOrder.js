@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import OrderSummary from "./OrderSummary";
 import Cone from "./Cone";
+import Cart from "./Cart";
 import OrderList from "./OrderList";
 import menu from "./data/icecreamdata";
 
@@ -105,8 +106,6 @@ class IceCreamOrder extends Component {
         this.setState({ order: newCone });
       }
     }
-
-    // update state with selection - should update the other components automatically?
   };
 
   render() {
@@ -118,6 +117,7 @@ class IceCreamOrder extends Component {
         <div className="main height-group">
           <OrderList menu={menu} clickHandler={this.handleSelection} />
           <Cone />
+          <Cart orders={this.state.order} />
         </div>
         <footer>Footer here</footer>
       </div>

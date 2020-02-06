@@ -19,7 +19,7 @@ li {
   padding: 2px;
 }
 
-li:hover {
+.menu-items > li:hover {
   font-size: 1.2em;
   font-weight: 600;
   color: darkorchid;
